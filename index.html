@@ -13,7 +13,9 @@
             margin-top: 50px;
         }
         #image {
+            width: 100%; /* 让图片宽度适应其容器 */
             max-width: 100%;
+            height: auto; /* 让高度自动调整，保持比例 */
         }
         #button {
             padding: 10px 20px;
@@ -28,15 +30,16 @@
 </head>
 <body>
     <div id="container">
-        <img id="image" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="Your Image">
+        <a href="https://www.google.com">
+            <img id="image" src="pic.png" alt="Your Image">
+        </a>
         <br>
-        <button id="button">Click here</button>
     </div>
 
     <script>
         document.getElementById('button').addEventListener('click', function() {
             alert('按钮被点击了！');
-            // 这里可以添加更多操作，比如跳转到另一个页面
+            
         });
     </script>
 </body>
