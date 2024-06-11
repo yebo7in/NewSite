@@ -37,10 +37,12 @@
     </div>
 
     <script>
-        document.getElementById('button').addEventListener('click', function() {
-            alert('按钮被点击了！');
-            
-        });
+        // 在页面加载后延时跳转到另一个页面
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "https://www.example.com"; // 替换为你想要跳转的页面地址
+            }, 5000); // 5000 毫秒即 5 秒钟后跳转
+        };
     </script>
 </body>
 </html>
