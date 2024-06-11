@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #container {
+            margin-top: 50px;
+        }
+        #image {
+            max-width: 100%;
+        }
+        #button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="image" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="Your Image">
+        <br>
+        <button id="button">Click here</button>
+    </div>
+
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            alert('按钮被点击了！');
+            // 这里可以添加更多操作，比如跳转到另一个页面
+        });
+    </script>
+</body>
+</html>
